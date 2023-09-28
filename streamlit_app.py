@@ -89,7 +89,7 @@ if st.session_state['result'] is not None:
     st.write(f"Result: {st.session_state['result']}")
 
 # Number buttons
-col1, col2, col3 = st.beta_columns(3)
+col1, col2, col3 = st.columns(3)
 with col1:
     if st.button("1"):
         st.session_state['input_string'] += "1"
